@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Restaurant</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link 
+         rel="stylesheet"
+         href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+
+</head>
+<body>
+    <nav id="nav" class="nav">
+        <h1><span>H</span>ome <span>R</span>estaurant</h1>
+    <ul>
+        <li id="label" onclick="mobile()"><i class="fas fa-bars"></i></li>
+        <li>Accueil</li>
+        <a href="Menu.html"><li>Recettes</li></a>
+        <a href="contact.html"><li>Contact</li></a>
+        <a href="apropos.html"><li>A propos</li></a>
+        
+        
+    </ul>
+</nav>
+
+
+    <header>
+        <div class="left">
+            <h1>Mangez à votre faim, un resto de luxe sans luxe</h1>
+            <p class="description">
+                Vous en avez assez des assiettes décorées comme des tableaux mais vides de  sens ? </br> Chez Home Restaurant, nous avons bousculé les codes du luxe pour ne garder que l'essentiel : le goût et la générosité. </br> Ici, pas de chichis, pas de service guindé, juste une cuisine d’auteur,</br> technique et audacieuse, servie dans une ambiance où l’on se sent enfin chez soi. </br>Venez déguster des plats gastronomiques pensés pour satisfaire votre palais… et votre appétit.
+            </p>
+            <button>Commencer</button>
+        </div>
+        <div class="right">
+            <img src="images/Header.png" alt="Header Photo" />
+        </div>
+    </header>
+
+
+
+   
+    
+<section id="newsletter">
+    <h1>Inscrivez-vous à notre Newsletter</h1>
+    <form>
+        <input type="text" />
+        <button>S'abonner</button>
+    </form>
+</section>
+
+<footer>
+  <div class="column important">
+    <h3>Merci à vous !</h3>
+    <p>&copy; Copyright Home Restaurant 2026 | Tous droits réservés</p>
+  </div>
+  <div class="column">
+    <h3>Nos services</h3>
+    <p>Boutiques</p>
+    <p>Restaurants</p>
+    <p>Livraison</p>
+  </div>
+  <div class="column">
+  <h3>Recrutement</h3>
+  <p>recrutement@homerestaurant.com</p>
+  <p>Postuler pour un emploi</p>
+  <p>Job étudiant</p>
+</div>
+  <div class="column">
+  <h3>Nos locaux</h3>
+  <p>Abidjan</p>
+  <p>Dakar</p>
+  <p>Bamako</p>
+</div>
+</footer>
+
+
+<script>
+    function mobile() {
+        var x = document.getElementById ('nav');
+        if(x.className === 'nav') {
+           x.className += 'responsive';
+        } else {
+            x.className = 'nav';
+        }
+    }
+</script>
+</body>
+</html>
